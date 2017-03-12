@@ -1,0 +1,72 @@
+$green: #5ea689
+
+.leftPanel
+  width: 25%
+  background-color: rgb(244, 244, 244)
+  height: 100%
+  min-width: 340px
+  box-shadow: 1px 0px 7px 1px silver
+  padding: 30px 15px
+  float: left
+  position: relative
+  z-index: 99
+  input
+    border: none
+    width: 100%
+    padding: 8px 8px 8px 30px
+    &[name="from"]
+      border-bottom: 1px solid #efecec
+      background: url(../images/from.png) no-repeat
+    &[name="to"]
+      background: url(../images/to.png) no-repeat
+  .placeWrap, .priceWrap
+    background-color: white
+    margin-bottom: 18px
+  .priceWrap
+    padding: 8px 0
+    text-align: center
+    color: #ff800d
+    .price
+      font-size: 1.5em
+      font-weight: 500
+
+  .buttonGroup
+    text-align: center
+    .button
+      background: $green
+      width: 100%
+      display: inline-block
+      text-align: center
+      padding: 10px 0
+      margin-bottom: 15px
+      cursor: pointer
+      color: white
+      &:hover
+        background-color: #15A668
+
+
+.orderListWrap
+  padding: 10px
+  .orderWrap
+    background-color: white
+    padding: 10px
+    margin-bottom: 10px
+    cursor: pointer
+    div
+      padding: 5px 5px 5px 20px
+      &:first-child
+        border-bottom: 1px solid #eeeeee
+        background: url(../images/start.png) no-repeat
+        background-position: 0 6px
+      &:last-child
+        background: url(../images/end.png) no-repeat
+        background-position: 0 6px
+    &:hover
+      box-shadow: 1px 1px 8px 1px silver
+
+
+.loader
+  //background: url("../images/loader.gif") no-repeat
+  //background-position: 0px 20px
+  padding: 10px 0 10px 30px
+

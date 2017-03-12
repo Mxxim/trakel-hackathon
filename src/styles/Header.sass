@@ -1,0 +1,91 @@
+
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css"
+
+$green: #5ea689
+
+.top_nav
+  width: 100%
+  position: relative
+  z-index: 1
+  .navbar-nav a:hover
+    //color: #ffffff !important
+    border-bottom: 1px solid #ffffff
+  .text-center
+    h1
+      font-size: 3em
+      font-weight: 200
+      color: white
+    h2
+      font-weight: 300
+      font-size: 1.8em
+      color: #e9f9f5
+  input
+    border: none
+    border-radius: 0
+  .buttonGroup
+    //background: hsla(164, 43%, 89%, 0.81)
+    text-align: center
+    .button
+      background: hsla(164, 43%, 89%, 0.81)
+      width: 100%
+      display: inline-block
+      text-align: center
+      padding: 10px 0
+      margin-bottom: 15px
+      cursor: pointer
+      &:hover
+        background-color: $green
+        color: white
+
+
+.navbar-default
+  //background-color: transparent
+  border-color: transparent
+
+.navbar-default
+  .navbar-brand:focus, .navbar-brand
+    //color: white
+    border-color: transparent
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text
+  //color: white
+
+.navbar-default .navbar-toggle .icon-bar
+  background-color: white
+
+.top_background
+  height: 50%
+  display: flex
+  align-items: center
+  .text-center
+    color: white
+    width: 100%
+    h1
+      font-size: 3em
+      font-weight: 200
+    h2
+      font-weight: 300
+      font-size: 1.8em
+      color: #e9f9f5
+
+
+@media (min-width: 768px)
+  .navbar-nav>li>a
+    padding-top: 15px
+    padding-left: 5px
+    padding-right: 5px
+  .navbar>.container .navbar-brand
+    margin-left: 0
+
+@media (max-width: 767px)
+  .top_nav
+    a:hover
+      color: #ffffff
+    .navbar-collapse
+      position: absolute
+      background-color: rgba(12, 12, 12, 0.71)
+      width: 90vw
+      z-index: 99
+
+#identity
+  color: silver

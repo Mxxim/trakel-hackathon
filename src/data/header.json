@@ -1,0 +1,15 @@
+{
+  "logo": {
+    "name": "Trakel",
+    "imgName": "icon.png"
+  },
+  "nav": [
+    "行业问题",
+    "解决方案",
+    "未来",
+    "团队"
+  ],
+  "title": "Trakel",
+  "subTitle": "Decentralized taxing platform",
+  "backgroundImgName": "banner.gif"
+}
