@@ -7,9 +7,7 @@ require('styles/Left.sass');
 import React from 'react';
 import $ from 'jquery';
 import List from './List'
-
-var orders = [];
-var driverFlag = true;
+import Block from '../Block'
 
 class Left extends React.Component {
   constructor(props) {
@@ -161,6 +159,7 @@ class Left extends React.Component {
           </div>
 
         </div>
+        <Block/>
       </div>
     )
   }

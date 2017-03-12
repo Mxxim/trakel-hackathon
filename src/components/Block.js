@@ -21,7 +21,8 @@ class Block extends React.Component {
   }
 
   componentDidMount() {
-    this.getBlocks();
+    setInterval(this.getBlocks, 1000);
+    // this.getBlocks();
   }
 
   getBlocks() {
@@ -33,20 +34,6 @@ class Block extends React.Component {
         this.setState({
           latestNumber: latestNumber,
         })
-           axios.get(window.url + "/chain/blocks/"+latestNumber)
-             .then((res2) => {
-               if (res2.status == 200 && res2.statusText == "OK" && res2.data) {
-                 this.setState({
-                   block: res2.data,
-                 })
-               } else {
-                 console.log(res2);
-                 alert("get blocks error!");
-               }
-             }).catch((err) => {
-             alert("get blocks error!");
-             console.error(err);
-           })
       } else {
         alert("get chain error!");
         console.log(res)
@@ -63,8 +50,6 @@ class Block extends React.Component {
         <h3>
           当前最新区块号：{this.state.latestNumber}
         </h3>
-        <p>最新区块内容：</p>
-        {this.state.block}
       </div>
     );
   }
