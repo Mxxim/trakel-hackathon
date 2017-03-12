@@ -123,6 +123,7 @@ class Left extends React.Component {
 
     return (
       <div className="leftPanel">
+        <Block/>
         <div style={{display: this.props.status == "passenger" && this.state.isSubmit == false ? 'block' : 'none'}}>
           <div className="placeWrap">
             <input type="text" id="from" name="from"/>
@@ -159,7 +160,6 @@ class Left extends React.Component {
           </div>
 
         </div>
-        <Block/>
       </div>
     )
   }

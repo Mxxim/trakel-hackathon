@@ -48,7 +48,7 @@ class Block extends React.Component {
     return (
       <div>
         <h3>
-          当前最新区块号：{this.state.latestNumber}
+          Latest block number：{this.state.latestNumber}
         </h3>
       </div>
     );
